@@ -9,6 +9,9 @@ jobs:
         id: hello
         uses: jvhoof/github-actions-hello-world@v1.1
         with:
-          who-to-greet: 'JVH' # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          FLEXVM_APP_ID: ${{ secrets.FLEXVM_APP_ID }} # Use the output from the `hello` step
+          FLEXVM_PASSWORD: ${{ secrets.FLEXVM_PASSWORD }} # Use the output from the `hello` step
+      - name: Get the output 1
+        run: echo "The time was ${{ steps.hello.outputs.flexvm_token }}"
+      - name: Get the output 2
+        run: echo "The time was ${{ steps.hello.outputs.flexvm_license }}"
