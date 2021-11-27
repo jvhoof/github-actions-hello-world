@@ -1,10 +1,14 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  FLEXVM_APP_ID:  # id of input
+    description: 'FlexVM Application ID'
     required: true
-    default: 'World'
+    default: ''
+  FLEXVM_PASSWORD:  # id of input
+    description: 'FlexVM Password'
+    required: true
+    default: ''
 outputs:
   time: # id of output
     description: 'The time we greeted you'
