@@ -1,17 +1,19 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  FLEXVM_APP_ID:  # id of input
+  flexvm_app_id:  # id of input
     description: 'FlexVM Application ID'
     required: true
     default: ''
-  FLEXVM_PASSWORD:  # id of input
+  flexvm_password:  # id of input
     description: 'FlexVM Password'
     required: true
     default: ''
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  flexvm_token: # id of output
+    description: 'FlexVM one time token'
+  flexvm_serial_number: # id of output
+    description: 'FlexVM serial number'
 runs:
   using: 'node12'
   main: 'index.js'
