@@ -9,6 +9,10 @@ inputs:
     description: 'FlexVM Password'
     required: true
     default: ''
+  flexvm_config_name:  # id of input
+    description: 'FlexVM configuration name'
+    required: true
+    default: ''
 outputs:
   flexvm_token: # id of output
     description: 'FlexVM one time token'
