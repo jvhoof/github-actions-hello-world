@@ -17,4 +17,4 @@ jobs:
       - name: Get the output 1
         run: echo "The time was ${{ steps.hello.outputs.flexvm_token }}"
       - name: Get the output 2
-        run: echo "The time was ${{ steps.hello.outputs.flexvm_license }}"
+        run: echo "The time was ${{ steps.hello.outputs.flexvm_serial_number }}"
